@@ -1,4 +1,4 @@
-syms theta x k
+desyms theta x k
 %metodo das imagens
 
 xc = [-30*10^-2 0 30*10^-2];
@@ -71,6 +71,7 @@ for k = 1:2
     Esolo = Esolo + dummy; 
 end
 E_eficaz = sqrt(Esolo(1)^2+Esolo(2)^2);
+pretty(E_eficaz)
 
 dummy = 0;
 Hsolo = 0;
